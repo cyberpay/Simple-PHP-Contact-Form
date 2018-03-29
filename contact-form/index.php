@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </head>
             <body>
                 <h1>{$subject}</h1>
+                <p><strong>{$config->get('fields.ip')}:</strong> {$_SERVER['REMOTE_ADDR']}</p>
                 <p><strong>{$config->get('fields.name')}:</strong> {$name}</p>
                 <p><strong>{$config->get('fields.email')}:</strong> {$email}</p>
                 <p><strong>{$config->get('fields.phone')}:</strong> {$phone}</p>
